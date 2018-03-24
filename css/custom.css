@@ -1,0 +1,23 @@
+ul {
+  list-style-type: none;
+  margin: auto;
+  margin-top: 10%;
+}
+
+ul a {
+  text-decoration: none;
+}
+
+li {
+  display: inline;
+  font-size: 2vh;
+}
+
+form {
+  margin-top: 10%;
+}
+
+body #main {
+  background-image: url("css/code_computer.jpg");
+  
+}
