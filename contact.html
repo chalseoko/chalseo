@@ -13,10 +13,6 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- FONT
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
-
   <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="stylesheet" href="css/normalize.css">
@@ -33,30 +29,31 @@
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <div class="container">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="index.html">Work</a></li>
-        <li><a href="index.htm">Contact</a></li>
-      </ul>
+    <ul class="popover-item">
+      <li class="popover-link"><a href="index.html">Home</a></li>
+      <li class="popover-link"><a href="work.html">Projects</a></li>
+      <li class="popover-link"><a href="resume.html">Resume</a></li>
+      <li class="popover-link current-page"><a href="contact.html">Contact</a></li>
+    </ul>
 
       <form>
         <div class="row">
           <div class="six columns">
             <label for="exampleEmailInput">Your email</label>
-            <input class="u-full-width" placeholder="test@mailbox.com" id="exampleEmailInput" type="email">
+            <input class="u-full-width" placeholder="name@email.com" id="exampleEmailInput" type="email">
           </div>
           <div class="six columns">
             <label for="exampleRecipientInput">Reason for contacting</label>
             <select class="u-full-width" id="exampleRecipientInput">
               <option value="Option 1">Questions</option>
-              <option value="Option 2">Admiration</option>
-              <option value="Option 3">Can I get your number?</option>
+              <option value="Option 2">Business Inquiry</option>
+              <option value="Option 3">Project Contact</option>
             </select>
           </div>
         </div>
 
         <label for="exampleMessage">Message</label>
-        <textarea class="u-full-width" placeholder="Hi Dave …" id="exampleMessage"></textarea>
+        <textarea class="u-full-width" placeholder="Hello Chalse …" id="exampleMessage"></textarea>
         <label class="example-send-yourself-copy">
           <input type="checkbox">
           <span class="label-body">Send a copy to yourself</span>
