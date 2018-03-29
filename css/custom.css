@@ -14,8 +14,12 @@
     color:#77322b;
   }
 
-  #main {
-    background: url("../img/main_background.jpg") #fff center top;
+  .outer-box{
+    background: #aabbcc;
+  }
+
+  .project, #skills {
+    background: lightblue;
   }
 
   .menu {
@@ -30,6 +34,10 @@
 
   form p {
     text-align:center;
+  }
+
+  footer p {
+    font-size: 1vh;
   }
 }
 
