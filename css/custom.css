@@ -1,54 +1,35 @@
-@import url('https://fonts.googleapis.com/css?family=Nobile|Open+Sans');
-
-*, button {
-  font-family: "Nobile";
-}
-
-ul {
-list-style-type: none;
-margin-top: 20%;
-}
-
-ul li a {
-  text-decoration: none;
-  color: inherit;
-  font-size: 2vh;
-  margin-right: 10%;
-}
-
-li {
-  display: inline;
-}
-
-#resume-list, .rheading{
-  margin:0;
-}
-
-form {
-  margin-top: 10%;
-  width: 80%;
-}
-
-/* #main {
-  background: url("../img/main_background.jpg");
-} */
-
-.current-page {
-  color:#77322b;
-}
-
-.rheading{
-  font-weight: bold;
-}
-
-button{
-  margin-left: 20%;
-}
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
 /* Larger than mobile */
-@media (min-width: 100px) {
-  ul li a {
+@media (min-width:50px) {
+  * {
+    font-family: "Open Sans", "Times New Roman", sans-serif;
+  }
+
+  li {
+    list-style-type: square;
+  }
+
+  .current-page {
+    color:#77322b;
+  }
+
+  #main {
+    background: url("../img/main_background.jpg") #fff center top;
+  }
+
+  .menu {
+    list-style-type: none;
     font-size: 2vh;
+    margin-right: 10%;
+  }
+
+  .menu li {
+    display: inline;
+  }
+
+  form p {
+    text-align:center;
   }
 }
 
@@ -56,4 +37,5 @@ button{
 @media (min-width: 750px) {}
 
 /* Larger than desktop */
-@media (min-width: 1000px) {}
+@media (min-width: 1000px) {
+}
