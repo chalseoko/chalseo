@@ -18,6 +18,24 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/skeleton.css">
   <link rel="stylesheet" href="css/custom.css">
+  <link rel="stylesheet" href="css/owl.carousel.css">
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+
+  <!-- JS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $(".owl-carousel").owlCarousel({
+        loop:true,
+        autoplay:true,
+        autoplayHoverPause:true
+      });
+    });
+  </script>
 
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -46,9 +64,17 @@
 
     <div class="row">
       <div class="box project">
+        <h5>Kapability</h5>
+        <div class="owl-carousel" style="margin-left:5%;">
+          <div> Your Content </div>
+          <div> Your Content </div>
+          <div> Your Content </div>
+          <div> Your Content </div>
+          <div> Your Content </div>
+          <div> Your Content </div>
+          <div> Your Content </div>
+        </div>
         <p>
-          Kapability
-          <br />
           Kapability is  an mobile application that focus on seeking job opportunities for people with disabilities.
           The goal of this application is to bridge the gap between unemployment and underemployment
           rate and people with disabilities. We are creating an inclusive, accessible environment within the working environment. To create this environment, we form partnerships with various companies and businesses. Employers assist us with job opportunities and Kapability connect those with disabilities to these job opportunities. Employers may need our assistance with accommodations as well.
@@ -58,9 +84,17 @@
       <hr />
 
       <div class="box project">
+        <h5>The Awesomizer</h5>
+        <div class="owl-carousel" style="margin-left:5%;">
+          <div> Your Content </div>
+          <div> Your Content </div>
+          <div> Your Content </div>
+          <div> Your Content </div>
+          <div> Your Content </div>
+          <div> Your Content </div>
+          <div> Your Content </div>
+        </div>
         <p>
-          Shapiro Design Lab | The Awesomizer
-          <br />
           The Awesome Box is a project initially implemented at Harvard University as a library engagement project. When people return their library books, they have the option to mark them as 'awesome', or recommend them to other users. Books are scanned and uploaded to the website for all to see. I have designed and implemented the front-end of the site.
         </p>
       </div>
@@ -68,9 +102,13 @@
       <hr />
 
       <div class="box project">
+        <h5>Grammar Parser</h5>
+        <div class="owl-carousel" style="margin-left:5%;">
+          <div> <img src="img/parser.png"> </div>
+          <div> <img src="img/parser2.png"> </div>
+          <div> <img src="img/parser3.png"> </div>
+        </div>
         <p>
-          Grammar Parser
-          <br />
           A grammar development tool. It takes in a system of grammar, and a lexicon of sentences. Once it has this, it parses the grammar and creates sentence trees of the possible types of grammar inflections for each sentence.
         </p>
       </div>
@@ -82,7 +120,6 @@
       </p>
     </footer>
   </div>
-
 <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
  </body>
