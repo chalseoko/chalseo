@@ -14,7 +14,7 @@
   margin-left:5%;
 }
 
-.navbar{
+header {
   background: coral;
   border-bottom: #eee solid 1px;
   border-right: #eee solid 1px;
@@ -32,7 +32,14 @@
   text-decoration: none;
   padding: 14px 16px;
   font-size: 1.5em;
-  color: white
+  color: white;
+}
+
+.navbar-link-img {
+    text-align: center;
+    text-decoration: none;
+    padding: 14px 16px;
+    font-size: 1.5em;
 }
 
 .navbar-link:hover{
@@ -40,6 +47,15 @@
   background: rgb(248, 195, 121, 0.2);
   border-radius: 15px;
 }
+
+.navbar img {
+  	height: 1.5em;
+    border-radius: 300px;
+    margin-bottom: -12%;
+    text-align: right;
+    padding: .25em .75em;
+}
+
 
 /* Larger than mobile */
 @media (min-width:50px) {
