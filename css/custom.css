@@ -1,9 +1,6 @@
-@import url('https://fonts.googleapis.com/css?family=Raleway');
+/* Mobile first queries */
 
-.menu_nav{
-  background-color: #444;
-  overflow:hidden;
-}
+@import url('https://fonts.googleapis.com/css?family=Raleway');
 
 .project {
   border-left: 10px rgb(248, 131, 121, 0.5) solid;
@@ -43,7 +40,7 @@ header {
 }
 
 .navbar-link:hover{
-  color: black;
+  color: #222;
   background: rgb(248, 195, 121, 0.2);
   border-radius: 15px;
 }
@@ -58,7 +55,7 @@ header {
 
 
 /* Larger than mobile */
-@media (min-width:50px) {
+@media (min-width:400px) {
 /*
   .outer-box{
     background: #aabbcc;
@@ -81,7 +78,3 @@ header {
 
 /* Larger than tablet */
 @media (min-width: 750px) {}
-
-/* Larger than desktop */
-@media (min-width: 1000px) {
-}
