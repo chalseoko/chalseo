@@ -72,7 +72,6 @@ footer{
 }
 
 @media (min-width:500px) {
-  .navbar a:not(:first-child) {display: none;}
   .navbar a.icon {
       float: right;
       display: block;
@@ -112,12 +111,19 @@ footer{
   iframe{
     height: 400px;
   }
+
+  .navbar a:not(:last-child) {
+    display: none;
+  }
 }
 
 /* Larger than tablet */
 @media (min-width: 1000px) {
-  .navbar.responsive {position: relative;}
-    .navbar.responsive a.icon {
+  .navbar.responsive {
+    position: relative;
+  }
+
+  .navbar.responsive a.icon {
       position: absolute;
       right: 0;
       top: 0;
