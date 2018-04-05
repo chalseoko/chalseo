@@ -19,10 +19,6 @@ html, body{
   border-bottom: solid 1px #222;
 }
 
-.topnav a:not(:last-child){
-  display: none;
-}
-
 .topnav a {
   display: block;
   color: white;
@@ -80,7 +76,7 @@ footer a:hover{
 }
 
 /* Tablet View */
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 800px) {
   #project, img, .topnav .mobile-icon, .larger-view {
       display: block;
   }
@@ -123,10 +119,14 @@ footer a:hover{
     font-style: italic;
     background: rgb(248, 5, 121, 0.1);
   }
+
+  .topnav a:not(:last-child){
+    display: none;
+  }
 }
 
 /* Desktop or larger view */
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1240px) {
   .topnav a {
     float: left;
   }
