@@ -1,125 +1,54 @@
 /* Mobile first queries */
 @import url('https://fonts.googleapis.com/css?family=Raleway');
-
-*{
-  box-sizing: border-box;
+body {
+  font-family: "Raleway", "Open Sans", serif;
 }
 
-.navbar-item {
-  margin-top: 4%;
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
   display: block;
-  margin: 0;
-}
-
-.navbar-link{
-  font-size: 2vh;
-  text-decoration: none;
-  padding: 14px 16px;
-  color: white;
-}
-
-.navbar-link:hover{
-  color: white;
-}
-
-html, body{
-  color: white;
-  background-color: black;
-  background: repeat url('https://images.unsplash.com/photo-1504480848728-5b43fa9ad455?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=a227222688061c3dc262a1652b8757df&auto=format&fit=crop&w=1348&q=80');
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-}
-
-.current-page{
-  font-weight: bold;
-  text-decoration: underline;
-}
-
-img {
-  max-width: 100%;
-  display: none;
-}
-
-.button, .button:hover {
-  color: white;
-}
-
-iframe{
-  width: 75%;
-  height: 100%;
-}
-
-footer a, footer a:hover {
-  text-decoration: none;
-  color: white;
-  font-weight:bolder;
-}
-
-footer{
+  color: #f2f2f2;
   text-align: center;
-  font-style: italic;
-  background: rgb(248, 5, 121, 0.1);
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
 }
 
-@media (min-width:500px) {
-  header {
-    margin-top: 5%;
-    border-top: #eee solid 1px;
-    border-bottom: #eee solid 1px;
+.topnav a:hover {
+  background-color: teal;
+  color: #222;
+}
+
+.current-page {
+  background-color: coral;
+  color: white;
+}
+
+@media screen and (min-width: 600px) {
+  .topnav.responsive {
+    position: relative;
   }
 
-  .navbar-link:hover{
-    background: rgb(248, 195, 121);
-    border-radius: 15px;
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
   }
-
-  .navbar-link {
-    text-decoration: none;
-    padding: 14px 16px;
-    font-size: 1.2em;
-    color: white;
-  }
-
-  .current-page {
-    color: coral;
-  }
-
-  .navbar-item {
-    margin-top: 4%;
-    display: inline-block;
-  }
-
-  .project p {
-    margin-left:5%;
-  }
-
-  img {
+  .topnav.responsive a {
+    float: none;
     display: block;
-  }
-
-  iframe{
-    height: 400px;
+    text-align: left;
   }
 }
 
-/* Larger than tablet */
-@media (min-width: 1000px) {
-  header {
-    margin-top: 5%;
-    border: #eee solid 1px;
-    }
-
-  .navbar-link{
-    font-size: 1.5em;
-  }
-
-  .project {
-    border-left: 10px rgb(248, 131, 121, 0.5) solid;
-    background-color: rgb(248, 195, 121, 0.05);
-  }
-
-  iframe{
-    height: 500px;
+@media screen and (min-width: 1000px) {
+  .topnav a.icon {
+    float: right;
+    display: block;
   }
 }

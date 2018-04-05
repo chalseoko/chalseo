@@ -8,38 +8,51 @@
   <meta name="description" content="portfolio site for Chalse Okorom">
   <meta name="author" content="Chalse Okorom">
 
-  <!-- Mobile Specific Metas
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <meta name="viewport" content="width=300, initial-scale=0.5">
-
   <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/skeleton.css">
   <link rel="stylesheet" href="css/custom.css">
 
+  <!-- JS/JQuery
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+  <script type="text/javascript">
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+  }
+  </script>
 </head>
 
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <body>
-  <div class="container">
     <header>
       <nav class="navbar">
-       	  <ul class="navbar-list">
-            <li class="navbar-item"><a class="current-page navbar-link" href="index.html">HOME</a></li>
-            <li class="navbar-item"><a class="navbar-link" href="work.html">PROJECTS</a></li>
-            <li class="navbar-item"><a class="navbar-link" href="resume.html">RESUME</a></li>
-            <li class="navbar-item"><a class="navbar-link" href="contact.html">CONTACT</a></li>
-          </ul>
+        <div class="navbar-list topnav" id="myTopnav">
+          <a class="navbar-link current-page" href="index.html" class="active">home</a>
+          <a class="navbar-link" href="work.html">portfolio</a></a>
+          <a class="navbar-link" href="resume.html">resume</a>
+          <a class="navbar-link" href="contact.html">contact</a>
+          <a class="navbar-link mobile-icon" href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+        </div>
       </nav>
     </header>
 
-    <div class="row" style="margin:20%;">
-          <p style="text-align:center; font-size:3vh;">Chalse is a student at the University of Michigan - Ann Arbor, studying cognitive science, and user experience design.
+    <div class="row large-view" style="margin-top: 25%; margin-bottom: 25%;">
+          <p style="text-align:center;">Chalse is a student at the University of Michigan - Ann Arbor, studying cognitive science, and user experience design.
             <br /><br />
             <a href="work.html" class="button">Learn More</a>
           </p>
+    </div>
+
+    <div class="mobile-view">
+
     </div>
 
     <footer>
@@ -47,7 +60,6 @@
         <a href="contact.html">Chalse Okorom &copy; </a>
       </p>
     </footer>
-  </div>
 <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   </body>

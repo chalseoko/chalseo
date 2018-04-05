@@ -9,10 +9,6 @@
   <meta name="description" content="portfolio site for Chalse Okorom">
   <meta name="author" content="Chalse Okorom">
 
-  <!-- Mobile Specific Metas
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <meta name="viewport" content="width=300, initial-scale=0.5">
-
   <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="stylesheet" href="css/normalize.css">
@@ -49,22 +45,30 @@
       })
   </script>
 
+  <script type="text/javascript">
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+  </script>
 </head>
-<body>
 
-  <!-- Primary Page Layout
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <div class="container">
-    <header>
-      <nav class="navbar">
-          <ul class="navbar-list">
-            <li class="navbar-item"><a class="navbar-link" href="index.html">HOME</a></li>
-            <li class="navbar-item "><a class="current-page navbar-link" href="work.html">PROJECTS</a></li>
-            <li class="navbar-item"><a class="navbar-link" href="resume.html">RESUME</a></li>
-            <li class="navbar-item"><a class="navbar-link" href="contact.html">CONTACT</a></li>
-          </ul>
-      </nav>
-    </header>
+<body>
+      <header>
+        <nav class="navbar">
+          <div class="navbar-list topnav" id="myTopnav">
+            <a class="navbar-link" href="index.html" class="active">home</a>
+            <a class="navbar-link" href="work.html">portfolio</a></a>
+            <a class="navbar-link" href="resume.html">resume</a>
+            <a class="navbar-link current-page" href="contact.html">contact</a>
+            <a class="navbar-link mobile-icon" href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+          </div>
+        </nav>
+      </header>
 
     <h1>Projects</h1>
       <div class="project">
@@ -93,9 +97,11 @@
         </p>
       </div>
 
+      <hr />
+
       <div class="project">
         <h5>'Filter Bubbles' & Personalization on the Web</h5>
-        <iframe style="margin-left:5%;" src="https://www.youtube.com/embed/s1-kNzyR2go" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/s1-kNzyR2go" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
       </div>
 
       <footer>
@@ -103,7 +109,6 @@
           <a href="contact.html">Chalse Okorom &copy;</a>
         </p>
       </footer>
-    </div>
 <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
  </body>
