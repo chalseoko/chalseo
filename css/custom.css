@@ -4,15 +4,25 @@ body {
   font-family: "Raleway", "Open Sans", serif;
 }
 
+html, body{
+  color: white;
+  background-color: black;
+  background: repeat center url('https://images.unsplash.com/photo-1494281710967-ffba0989215d?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=6374ecf5975dd301680a45854e66cf7c&auto=format&fit=crop&w=1350&q=80');
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+}
+
 .topnav {
   overflow: hidden;
-  background-color: #333;
+  background-color: black;
+  border-bottom: solid 1px #222;
 }
 
 .topnav a {
   float: left;
   display: block;
-  color: #f2f2f2;
+  color: white;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -32,6 +42,10 @@ body {
 @media screen and (min-width: 600px) {
   .topnav.responsive {
     position: relative;
+  }
+
+  .topnav .icon {
+    display: none;
   }
 
   .topnav.responsive .icon {
