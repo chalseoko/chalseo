@@ -109,14 +109,6 @@ footer{
     display: inline-block;
   }
 
-  p {
-    font-size: 3vh;
-  }
-
-  .project p {
-    margin-left:5%;
-  }
-
   iframe{
     height: 400px;
   }
