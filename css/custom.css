@@ -33,7 +33,7 @@ html, body{
   color: #222;
 }
 
-#project, img, .topnav .mobile-icon, .larger-view {
+.project, img, .topnav .mobile-icon, .larger-view {
     display: none;
 }
 
@@ -77,7 +77,7 @@ footer a:hover{
 
 /* Tablet View */
 @media screen and (min-width: 650px) {
-  #project, img, .topnav .mobile-icon, .larger-view {
+  .project, img, .topnav .mobile-icon, .larger-view {
       display: block;
   }
 
@@ -113,7 +113,8 @@ footer a:hover{
   footer {
     text-align: center;
     font-style: italic;
-    background: rgb(248, 5, 121, 0.1);
+    background-color: coral;
+    opacity: 0.1;
   }
 
   .topnav a:not(:last-child){
@@ -137,9 +138,8 @@ footer a:hover{
      display: none;
  }
 
- #project {
-   border-left: 10px rgb(248, 131, 121, 0.5) solid;
-   background-color: rgb(248, 195, 121, 0.1);
+.project {
+   border-left: 10px solid coral;
  }
 
  .topnav a:not(:last-child){
