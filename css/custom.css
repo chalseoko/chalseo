@@ -30,19 +30,15 @@ html, body{
 
 .topnav a:hover {
   background-color: teal;
-  color: #222;
+  color: black;
 }
 
 .project, img, .topnav .mobile-icon, .larger-view {
     display: none;
 }
 
-h5{
-  text-decoration: underline;
-}
-
 .current-page {
-  background-color: coral;
+  background-color: #B23329;
   color: white;
 }
 
@@ -55,13 +51,13 @@ iframe{
   height: 100%;
 }
 
-footer a {
+footer {
   text-decoration: none;
   color: white;
   font-weight:bolder;
 }
 
-footer a:hover{
+footer:hover{
   color: coral;
 }
 
@@ -113,8 +109,7 @@ footer a:hover{
   footer {
     text-align: center;
     font-style: italic;
-    background-color: coral;
-    opacity: 0.1;
+    background-color: black;
   }
 
   .topnav a:not(:last-child){
@@ -139,7 +134,7 @@ footer a:hover{
  }
 
 .project {
-   border-left: 10px solid coral;
+   -left: 10px solid coral;
  }
 
  .topnav a:not(:last-child){
