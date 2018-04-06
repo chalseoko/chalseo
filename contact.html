@@ -50,17 +50,17 @@
       <p>
         Contact me! I look forward to recieving your message. Expect a reply within 3 - 5 business days.
       </p>
-
       <p>
         Contact me for:
+      </p>
+
         <ul>
           <li>Business inquiries</li>
           <li>Professional opportunities</li>
           <li>General networking events</li>
         </ul>
-      </p>
 
-      <form>
+      <form action="mailto:someone@example.com" method="post" enctype="text/plain">
         <div class="row">
           <div class="six columns">
             <label for="name">Your name</label>
@@ -68,7 +68,7 @@
           </div>
           <div class="six columns">
               <label for="email">Your email</label>
-              <input required class="u-full-width" placeholder="name@email.com" id="email" type="email">
+              <input required name=pattern-test pattern="\w+@\w+.[a-zA-Z]{3}" class="u-full-width" placeholder="name@email.com" id="email" type="email">
           </div>
         </div>
 
@@ -83,7 +83,6 @@
 
     <hr />
   </div>
-
   <footer>
       Chalse Okorom &copy;
   </footer>
