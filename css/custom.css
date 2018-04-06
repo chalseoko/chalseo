@@ -58,11 +58,16 @@ iframe{
 footer {
   text-decoration: none;
   color: white;
-  font-weight:bolder;
+  padding: 14px 16px;
+  bottom:0;
+  width:100%;
+  background:#B23329;
+  position: fixed;
+  z-index: 1;
 }
 
 footer:hover{
-  color: coral;
+  color: black;
 }
 
 .button, .button:hover {
@@ -70,15 +75,29 @@ footer:hover{
 }
 
 .larger-view {
-  font-size: 2vh;
-  margin-top: 20%;
-  margin-bottom: 20%;
+  font-size: 3vh;
+  margin-top: 25%;
+  margin-bottom: 25%;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    color:white;
+    align-items: flex-end;
+}
+
+.fa:hover {
+    opacity: 0.7;
 }
 
 /* Tablet View */
 @media screen and (min-width: 650px) {
   .project, img, .topnav .mobile-icon, .larger-view {
-      display: block;
+    display: block;
   }
 
   .mobile-view{
@@ -102,17 +121,12 @@ footer:hover{
   }
 
   iframe{
-    width: 75%;
+    width: 80%;
     height: 400px;
   }
 
   .large-view p {
     font-size: 3vh;
-  }
-
-  footer {
-    text-align: center;
-    font-style: italic;
   }
 
   .topnav a:not(:last-child){
@@ -129,7 +143,6 @@ footer:hover{
 
   iframe{
     height:500px;
-    width: 80%;
   }
 
   .topnav .mobile-icon {
@@ -137,7 +150,7 @@ footer:hover{
  }
 
 .project {
-   -left: 10px solid coral;
+   border-left: 10px solid teal;
  }
 
  .topnav a:not(:last-child){
