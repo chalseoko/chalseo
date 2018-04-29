@@ -1,7 +1,9 @@
 /* Mobile first queries */
-@import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('https://fonts.googleapis.com/css?family=Tajawal');
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display');
+
 body {
-  font-family: "Raleway", "Open Sans", serif;
+  font-family: "Tajawal", sans-serif;
 }
 
 .topnav {
@@ -10,7 +12,7 @@ body {
 }
 
 h1{
-    margin-top: 10%;
+    margin-top: 5%;
 }
 
 .topnav a {
@@ -24,7 +26,7 @@ h1{
 
 .topnav a:hover {
   background-color: #B23329;
-  opacity: 0.7;
+  opacity: 0.8;
 }
 
 .project, img, .topnav .mobile-icon, .larger-view {
@@ -43,10 +45,6 @@ img {
 iframe{
   width: 75%;
   height: 100%;
-}
-
-.button, .button:hover {
-  color: white;
 }
 
 .fa {
@@ -91,12 +89,32 @@ footer{
   }
 }
 
+.book{
+  background-color: #B23329;
+  text-decoration: none;
+  color: white;
+  padding: 5px;
+  border: #222;
+  opacity: 0.8;
+  margin-bottom: 10px;
+}
+
+.book:hover{
+  font-weight: bold;
+}
+
+a, a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+p {
+  font-family: "Playfair Display", Arial, sans-serif;
+  word-spacing: .1em;
+}
+
 /* Desktop or larger view */
 @media screen and (min-width: 1240px) {
-  .topnav a {
-    float: left;
-  }
-
   iframe{
     height:500px;
   }
