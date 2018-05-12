@@ -1,5 +1,5 @@
 /* Mobile first queries */
-@import url('https://fonts.googleapis.com/css?family=Gothic+A1|Bungee+Inline');
+@import url('https://fonts.googleapis.com/css?family=Gothic+A1');
 
 body {
   font-family: "Gothic A1", sans-serif;
@@ -7,15 +7,37 @@ body {
 
 .topnav {
   overflow: hidden;
-  background-color: black;
+  background-color: #222222;
 }
 
-h1 {
-    margin-top: 5%;
+.title-content {
+    padding-top: 5%;
+    padding-left: 10%;
+    padding-right: 25%;
+    padding-bottom: 5%;
 }
 
-p {
-  font-size: 1.2em;
+.box {
+  padding-top: 7%;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-bottom: 7%;
+
+  text-align: center;
+  background-color: #29B289;
+  border-radius: 10px;
+  color: #222222;
+
+  margin: 5%;
+}
+
+#title {
+  font-size: 3em;
+  color: #29B289;
+}
+
+#bodytext {
+  font-size: 2em;
 }
 
 img {
@@ -32,12 +54,12 @@ img {
 }
 
 .topnav a:hover {
-  background-color: #B23329;
+  background-color: #29B289;
   opacity: 0.8;
 }
 
 .current-page {
-  background-color: #B23329;
+  background-color: #29B289;
 }
 
 iframe{
@@ -50,13 +72,13 @@ iframe{
     font-size: 30px;
     width: 50px;
     text-align: center;
-    color: black;
+    color: #222222;
     text-decoration: none;
     align-items: flex-end;
 }
 
 .fa:hover {
-    color: #B23329;
+    color: #29B289;
 }
 
 footer {
@@ -66,10 +88,6 @@ footer {
   padding: 1em;
   text-align: center;
   z-index: 1;
-}
-
-a, a:hover {
-  color: black;
 }
 
 /* Tablet View */
@@ -95,7 +113,7 @@ a, a:hover {
   }
 
 .project {
-   border-left: 10px solid teal;
-   border-right: 10px solid teal;
+   border-left: 10px solid #29B289;
+   border-right: 10px solid #teal;
  }
 }
