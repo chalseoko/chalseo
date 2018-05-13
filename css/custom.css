@@ -7,7 +7,6 @@ body {
 
 .topnav {
   overflow: hidden;
-  background-color: #222222;
 }
 
 .title-content {
@@ -35,23 +34,21 @@ img {
   max-width: 100%;
 }
 
+.topnav a:hover, .current-page {
+  background-color: #29B289;
+  color: #fff;
+  opacity: 0.8;
+}
+
 .topnav a {
   display: block;
-  color: white;
+  color: #222;
   text-align: center;
   padding: 18px 20px;
   text-decoration: none;
   font-size: 20px;
 }
 
-.topnav a:hover {
-  background-color: #29B289;
-  opacity: 0.8;
-}
-
-.current-page {
-  background-color: #29B289;
-}
 
 iframe{
   width: 75%;
