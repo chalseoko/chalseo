@@ -9,11 +9,26 @@ body {
   overflow: hidden;
 }
 
+.article {
+  background-color: #29B289;
+}
+
 .title-content {
     padding-top: 5%;
     padding-left: 10%;
     padding-right: 25%;
     padding-bottom: 5%;
+}
+
+.button {
+  font-weight: normal;
+  text-transform: lowercase;
+  border:none;
+  background-color:#29B289;
+  font-size: .05em;
+  font-style:'Gothic A1';
+  color:white;
+  border-radius:5px;
 }
 
 form{
@@ -28,6 +43,7 @@ form{
 
 #bodytext {
   font-size: 2em;
+  text-align: left;
 }
 
 img {
