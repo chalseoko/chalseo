@@ -13,6 +13,20 @@ body {
   background-color: #29B289;
 }
 
+#project {
+  text-align: center;
+  padding: 2%; 
+  opacity: 50%; 
+  color:white; 
+  height: 10%;
+  width:48%;
+}
+
+.column, .columns {
+  margin-left: 0;
+  margin-bottom: 5%;
+}
+
 .title-content {
     padding-top: 5%;
     padding-left: 10%;
@@ -37,19 +51,13 @@ form{
 }
 
 #project-square{
-  border-radius: 10px;
   opacity: .80;
-}
-
-#project-square #title, #project-square #bodytext {
-  color: white;
-  padding: 5%;
-  margin: 0;
 }
 
 #title {
   font-size: 3em;
   color: #29B289;
+  font-weight: bold;
 }
 
 #bodytext {
@@ -108,16 +116,6 @@ footer {
 
 /* Tablet View */
 @media screen and (min-width: 650px) {
-  #project-square{
-    border-radius: 0px;
-  }
-  
-  #project-square #title, #project-square #bodytext {
-    color: white;
-    padding: 5%;
-    margin: 0;
-  }
-
   .project, img, .topnav {
     display: block;
   }
