@@ -19,7 +19,14 @@ body {
   opacity: 50%; 
   color:white; 
   height: 10%;
-  width:48%;
+  width:40%;
+
+  animation-name: project-id;
+  animation-duration: 2s;
+}
+
+#project p {
+  font-size: 1.2em;
 }
 
 .column, .columns {
@@ -135,4 +142,9 @@ footer {
    border-left: 10px solid #29B289;
    border-right: 10px solid teal;
  }
+}
+
+
+@keyframes project-id {
+  from {}
 }
